@@ -1,0 +1,26 @@
+<BookShelf>
+    <Book>
+        <title>The Little Prince</title>
+        <publishedYear>1943</publishedYear>
+        <numberOfPages>100</numberOfPages>
+        <authors>
+            <author>Antoine de Saint-Exupéry</author>
+        </authors>
+    </Book>
+    <Book>
+        <title>The Woman in Me</title>
+        <publishedYear>2023</publishedYear>
+        <numberOfPages>350</numberOfPages>
+        <authors>
+            <author>Britney Spears</author>
+        </authors>
+    </Book>
+    <Book>
+        <title>The Perks of Being a Wallflower</title>
+        <publishedYear>1999</publishedYear>
+        <numberOfPages>240</numberOfPages>
+        <authors>
+            <author>Stephen Chbosky</author>
+        </authors>
+    </Book>
+</BookShelf>

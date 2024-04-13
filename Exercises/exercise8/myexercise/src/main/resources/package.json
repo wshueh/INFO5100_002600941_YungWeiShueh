@@ -1,0 +1,22 @@
+{
+  "BookShelf": [
+    {
+      "title": "The Little Prince",
+      "publishedYear": 1943,
+      "numberOfPages": 100,
+      "authors": ["Antoine de Saint-Exupéry"]
+    },
+    {
+      "title": "The Woman in Me",
+      "publishedYear": 2023,
+      "numberOfPages": 350,
+      "authors": ["Britney Spears"]
+    },
+    {
+      "title": "The Perks of Being a Wallflower",
+      "publishedYear": 1999,
+      "numberOfPages": 240,
+      "authors": ["Stephen Chbosky"]
+    }
+  ]
+}
