@@ -8,6 +8,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 
 
+// Provide layout and user interface for image details and actions.
 public class ImageDetailsView extends VBox{
     private ImageView imageView;
     private Label labelInfo, dataDisplay;

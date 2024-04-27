@@ -5,6 +5,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+// Concrete implementation of BaseImage that performs the image conversion operation.
+
 public class ImageConverter extends BaseImage {
     @Override
     public void performOperation(File input, File output, String format) throws IOException {

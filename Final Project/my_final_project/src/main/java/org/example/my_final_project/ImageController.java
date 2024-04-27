@@ -16,6 +16,7 @@ import javax.imageio.stream.ImageInputStream;
 import java.util.Iterator;
 
 
+// User interactions and coordinates the model and view
 public class ImageController {
     private ImageModel model;
     private ImageDetailsView view;
@@ -30,6 +31,7 @@ public class ImageController {
         setupHandlers();
     }
 
+    //Handles setup of action handlers for buttons in the view
     private void setupHandlers() {
         view.getConvertButton().setOnAction(e -> {
             String format = view.getSelectedFormat();
@@ -54,6 +56,7 @@ public class ImageController {
         view.getDownloadButton().setOnAction(e -> downloadImage());
     }
 
+    //To upload an image using a file chooser dialog
     public void onImageUpload() {
         FileChooser fileChooser = new FileChooser();
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Image files", "*.jpg", "*.png", "*.gif", "*.bmp");
@@ -65,6 +68,7 @@ public class ImageController {
         }
     }
 
+    //Updates the view with details of the uploaded image file
     private void updateImageView(File imageFile) {
         try {
             if (imageFile.exists()) {
@@ -90,6 +94,7 @@ public class ImageController {
         }
     }
 
+    //Converts the uploaded image file to a selected format and updates the view
     public void convertImage(File inputFile, File outputFile, String format) {
         try {
             model.convertImage(inputFile, format, outputFile);
@@ -107,6 +112,7 @@ public class ImageController {
         }
     }
 
+    // Downloads the converted image to the user's desktop and provides feedback
     private void downloadImage() {
         if (lastConvertedFile != null && lastConvertedFile.exists()) {
             try {

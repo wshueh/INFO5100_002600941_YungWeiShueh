@@ -7,6 +7,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 
+// Main class that sets up the JavaFX GUI and initiates the application components
 public class HelloApplication extends Application {
 
     private ImageDetailsView imageView;
