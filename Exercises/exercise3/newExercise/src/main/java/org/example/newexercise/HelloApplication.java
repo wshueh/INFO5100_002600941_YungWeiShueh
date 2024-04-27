@@ -35,6 +35,7 @@ public class HelloApplication extends Application {
         grid.add(display, 0, 0, 4, 1);
 
 
+        //Array of button labels
         String[] buttons = {
                 "7", "8", "9", "/",
                 "4", "5", "6", "*",
@@ -42,7 +43,7 @@ public class HelloApplication extends Application {
                 "0", "C", "=", "+"
         };
 
-
+        //Create and add buttons to the grid
         int index = 0;
         for (int i = 1; i < 5; i++) {
             for (int j = 0; j < 4; j++) {
@@ -57,12 +58,12 @@ public class HelloApplication extends Application {
 
         primaryStage.setTitle("Four Function Calculator");
 
-        Scene scene = new Scene(grid, 320, 240);
+        Scene scene = new Scene(grid, 320, 240); //Create a scene with specified size
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
-
+    //Method to process button
     private void processEvent(javafx.event.ActionEvent event) {
         String value = ((Button)event.getSource()).getText();
         if ("0123456789".contains(value)) {
@@ -87,6 +88,7 @@ public class HelloApplication extends Application {
         }
     }
 
+    //Calculate the result based on operator
     private double calculate(double a, double b, String operator) {
         switch (operator) {
             case "+": return a + b;
@@ -99,6 +101,7 @@ public class HelloApplication extends Application {
 
 
 
+    //Launch the application
     public static void main(String[] args) {
         launch();
     }
