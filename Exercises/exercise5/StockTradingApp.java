@@ -1,3 +1,6 @@
+//Main class to demonstrate stock price updates and message creation using the singleton pattern.
+
+
 public class StockTradingApp {
     public static void main(String[] args) {
 

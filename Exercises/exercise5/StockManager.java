@@ -1,5 +1,6 @@
 import java.util.*;
 
+//Singleton class for managing stock prices and notifying observers of price changes.
 class StockManager {
     
     private static StockManager instance;
